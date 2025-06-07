@@ -12,6 +12,9 @@ This is a monorepo for the **Lollipop Nails Shop** project, containing:
 ## Webiste
 ![Home page](./screenshots/website2.jpeg)
 
+- Public website: [http://localhost:3000](http://54.252.246.37:3000/) 
+- Dashboard: [http://localhost:3001](http://54.252.246.37:3001/)
+
 ## Project Structure
 
 ```
@@ -56,9 +59,6 @@ This will start all services (frontend, dashboard, backend, MongoDB):
 ```sh
 docker-compose up --build
 ```
-
-- Public website: [http://localhost:3000](http://54.252.246.37:3000/) 
-- Dashboard: [http://localhost:3001](http://54.252.246.37:3001/)
 
 ### 4. Running Locally (Development)
 
