@@ -57,8 +57,8 @@ This will start all services (frontend, dashboard, backend, MongoDB):
 docker-compose up --build
 ```
 
-- Public website: [http://localhost:3000](http://localhost:3000)
-- Dashboard: [http://localhost:3001](http://localhost:3001)
+- Public website: [http://localhost:3000](http://54.252.246.37:3000/) 
+- Dashboard: [http://localhost:3001](http://54.252.246.37:3001/)
 - Backend API: [http://localhost:5000/api/v1](http://localhost:5000/api/v1)
 
 ### 4. Running Locally (Development)
