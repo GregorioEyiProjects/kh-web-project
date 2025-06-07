@@ -9,7 +9,7 @@ This is a monorepo for the **Lollipop Nails Shop** project, containing:
 ---
 
 
-## Images
+## Webiste
 ![Home page](./screenshots/website2.jpeg)
 
 ## Project Structure
