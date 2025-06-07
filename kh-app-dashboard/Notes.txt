@@ -1,0 +1,31 @@
+- FormData
+
+is a built-in JavaScript browser API (not imported from any library) that lets you easily construct a set of key/value pairs representing form fields and their values, including files.
+It is used to send form data, especially files, via HTTP requests (like POST) to a server, typically with multipart/form-data encoding.
+You do not need to import it—it is available globally in browsers.
+
+- The "image/*"
+The accept="image/*" attribute on the <input type="file" /> element tells the browser to only allow the user to select image files (like .jpg, .png, .gif, etc.) from their device.
+It filters the file picker dialog to show only image files, making it easier for users to pick the correct file type.
+
+
+NOTE
+
+- This below with this " () => setShowUpload(true) "
+<Buttons
+  icon={FiEdit}
+  title={editvalue}
+  onTap={() => setShowUpload(true)}
+/>
+
+Response: is a function that will be called when the button is clicked.
+The function
+
+- This below with this " setShowUpload(true) "
+<Buttons
+  icon={FiEdit}
+  title={editvalue}
+  onTap={setShowUpload(true)}
+/>
+
+Response: Calling the function directly or immediately:

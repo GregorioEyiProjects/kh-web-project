@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f4;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-color: 214, 219, 220;
+  --background-start-end: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-color: 0, 0, 0;
+    --background-start-end: 0, 0, 0;
+  }
+}
+ */

@@ -1,0 +1,132 @@
+# Create a new React project with Vite
+
+-> npm create vite@latest my-app -- --template react
+-> cd my-app
+-> npm install
+
+# Install Tailwind CSS
+-> npm install -D tailwindcss postcss autoprefixer
+-> npx tailwindcss init -p
+
+- Error
+-> npx tailwindcss init -p
+npm error could not determine executable to run
+npm error A complete log of this run can be found in: /Users/macbookpro/.npm/_logs/2025-05-19T13_43_25_345Z-debug-0.log
+
+Solution:(it did not work) Check the node version, if it's above 20+, downgrade it to 20
+Use 'NVM' to do it. If don't have it install, install it first. 
+
+Solution 2: Open the file "package.json" of the route below and check for "bin", If the "bin" field is missing, the package is broken.
+node_modules/tailwindcss/package.json. SO USE THE OFFICIAL WEBSITE TO INSTALL IT.
+
+#Install ShadCN UI
+-> Follow the OFFICIAL WEBSITE
+- It will add the Button component to your project.
+-> npx shadcn@latest add button
+
+# ROUTING 
+- Add Routing (React Router)
+-> npm install react-router-dom
+Note: use it the main.js file. import this "BrowserRouter" and then Setup Routes in App.jsx by importing these {Routes, Route, Link}
+
+
+# Add State Management (Zustand)
+Zustand is modern, simple, and lightweight — like Riverpod for Flutter.
+
+- Install Zustand
+-> npm install zustand
+
+- First create a store
+Note: create a file for it.
+
+- Then bind your components, and that's it!
+
+#  Setup Axios for Backend Requests 
+NOTE: Create a folder called "lib". Route "src/lib/axios.js"
+- Install Axio 
+-> npm install axios
+
+NOTE:
+inset-0:
+This sets all four sides (top, right, bottom, left) of the element to 0.
+When used with position: fixed or absolute, it makes the element stretch to cover the entire parent or viewport.
+In your modal, it ensures the overlay covers the whole screen.
+
+z-50:
+This sets the CSS z-index to 50.
+A higher z-index means the element will appear above other elements with a lower z-index.
+In your modal, it ensures the overlay appears on top of everything else.
+
+Summary:
+fixed inset-0 z-50 makes your modal overlay cover the whole screen and appear above all other content.
+
+NOTE:
+To place the text on top of the banner image and centered, you should use absolute positioning 
+with a relatively positioned parent. Here’s how you can do it:
+
+NOTE:
+flex-grow border-t creates horizontal lines that expand to fill the space.
+The span with "OR" is centered with margin on both sides.
+my-10 adds vertical spacing above and below the separator.
+
+NOTE:
+The rel attribute in an <a> tag specifies the relationship between the current page and the linked page.
+When you use target="_blank" (which opens the link in a new tab), it’s important for security to also add:
+
+noopener: Prevents the new page from being able to access the window.opener property, which protects your page from certain types of attacks.
+noreferrer: Prevents the browser from sending the address (referrer) of your page to the new page.
+In summary:
+rel="noopener noreferrer" is a best practice for external links opened in a new tab, for security and privacy reasons.
+
+NOTE:
+
+For smooth scrolling, add this to your CSS (e.g., in index.css):
+
+- like this:
+
+@import "tailwindcss";
+html {
+  scroll-behavior: smooth;
+}
+
+NOTE: This will install the entire react-icons package, which includes the fi (Feather Icons)
+npm install react-icons --save
+
+NOTE: To control the command k
+-> npm i cmdk
+
+
+NOTE:
+In HTML, clicking a <button> inside a <form> triggers the form's default submit action, which reloads the page.
+In React, you need to call e.preventDefault() in your event handler to stop this.
+
+NOTE:
+To run two React (Vite) projects at the same time, you need to change the port
+
+1. Open your project's root folder in VS Code.
+2. In your terminal, run the Vite dev server with a custom port using: Replace 5174 with any available port number.
+3. Alternatively, set the port in your vite.config.js:
+
+
+
+-----
+Build a website for my nail polish shop please.
+I need 3 sections on the website: The header, the main and the footer section.
+
+- The header: It will contain the a navbar with (a logo at the left site of the screen and the nav links on the right with the following texts: "Home", "My Work", "About"). 
+Below the header, i would like a grid with two columns, the left column will contain a column with a motivational text and below the text a button that says "contact me".
+
+- The main section will contain a text to let the users know my experience, and a gallery of 4 columns and 3 rows with photos of nail polish. The main will also contain a review section right below the images.
+
+- The footer: lastly a footer that will contain links to my social media such as TickTock, Facebook,, Line, Instagram and copy right text with "&copy; 2025 - All rights reserved - Kh nail"
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+STEP 1: Create an S3 Bucket
+
+1️⃣ Log into AWS Console and go to the S3 service.
+
+2️⃣ Click “Create bucket”.
+
+Bucket name: e.g., my-image-storage.
+
+Region: Choose your preferred region.
+
+3️⃣ Uncheck “Block all public access” if you want public URLs (recommended for images).
+
+⚠️ Be careful with sensitive data—public access means anyone can access these files.
+
+4️⃣ Click “Create bucket”.
+
+
+ STEP 2: Upload an Image (Test)
+1️⃣ Go into your new bucket.
+2️⃣ Click “Upload” and add an image file.
+3️⃣ After uploading, click the file and copy the “Object URL”—this is your direct link!
+
+(Destination -> s3://kh-images-bucket/images/)
+
+
+STEP 3: Configure Bucket Policy for Public Read Access
+To let users access images publicly (if you want):
+
+1️⃣ Go to the “Permissions” tab in your bucket.
+2️⃣ Click “Bucket Policy” and add:
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "PublicReadGetObject",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::kh-images-bucket/*"
+    }
+  ]
+}
+
+⚙️ STEP 4: Connect from Node.js
+
+- You’ll need the AWS SDK:
+-> npm install aws-sdk

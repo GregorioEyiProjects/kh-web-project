@@ -1,0 +1,52 @@
+version: "3.8"
+
+services:
+  frontend-public:
+    build:
+      context: ./kh-app-front-end
+      dockerfile: Dockerfile
+    container_name: kh-front-end-up
+    ports:
+      - "3000:80"
+    environment:
+      - VITE_BACKEND_API_URL=http://backend:5000/api/v1
+    depends_on:
+      - backend
+
+  frontend-dashboard:
+    build:
+      context: ./kh-app-dashboard
+      dockerfile: Dockerfile
+    container_name: kh-dashboard-up
+    ports:
+      - "3001:80"
+    environment:
+      - VITE_BACKEND_API_URL=http://backend:5000/api/v1
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./kh-app-back-end
+      dockerfile: Dockerfile
+    container_name: kh-backend-up
+    ports:
+      - "5000:5000"
+    environment:
+      - DATABASE_URL=mongodb://kh-mongodb:27017/khDatabase
+    depends_on:
+      - kh-mongodb
+    volumes:
+      - ./kh-app-back-end:/app
+      - /app/node_modules
+
+  kh-mongodb:
+    image: mongo:latest
+    container_name: kh-mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodata:/data/db
+
+volumes:
+  mongodata:

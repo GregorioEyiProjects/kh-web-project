@@ -1,0 +1,5 @@
+
+- Multer
+Multer is a middleware for Node.js, commonly used with Express, 
+that handles multipart/form-data—the encoding type used for file uploads in forms. 
+It makes it easy to accept files (like images) from the client and store them on your server or process them further.
