@@ -8,6 +8,10 @@ This is a monorepo for the **Lollipop Nails Shop** project, containing:
 
 ---
 
+
+## Images
+![Home page](./kh-web-project/screenshots/web.jpeg)
+
 ## Project Structure
 
 ```
