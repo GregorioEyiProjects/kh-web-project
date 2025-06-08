@@ -1,6 +1,6 @@
 # KH Fullstack App
 
-This is a monorepo for the **Lollipop Nails Shop** project, containing:
+This is a on going project for the **Lollipop Nails Shop** , containing:
 
 - **kh-app-front-end**: Public-facing website (React + Vite + Tailwind CSS)
 - **kh-app-dashboard**: Admin dashboard (React + Vite + Tailwind CSS)
