@@ -12,8 +12,8 @@ This is an on going project for the **Lollipop Nails Shop** , containing:
 ## Webiste
 ![Home page](./screenshots/website2.jpeg)
 
-// Public website: [http://localhost:3000](http://54.252.246.37:3000/) 
-// Dashboard: [http://localhost:3001](http://54.252.246.37:3001/)
+/* Public website: [http://localhost:3000](http://54.252.246.37:3000/)  */
+// Dashboard: [http://localhost:3001](http://54.252.246.37:3001/) */
 
 ## Project Structure
 
