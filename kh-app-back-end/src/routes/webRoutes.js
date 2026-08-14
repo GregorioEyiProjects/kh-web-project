@@ -1,3 +1,5 @@
+// src/routes/webRoutes.js
+
 const express = require("express");
 const { check } = require("express-validator");
 const router = express.Router();
@@ -26,7 +28,7 @@ router.post(
       .notEmpty()
       .withMessage("Sub-header text is required"),
   ],
-  updateHeaderAndSubHeader
+  updateHeaderAndSubHeader,
 );
 
 // @route   POST /api/v1/uploadImage
@@ -34,7 +36,7 @@ router.post(
   "/uploadImage",
   authMiddleware,
   upload.single("image"),
-  uploadImage
+  uploadImage,
 );
 
 // @route POST /api/v1/update/location
@@ -50,7 +52,7 @@ router.post(
       .notEmpty()
       .withMessage("Location contact is required"),
   ],
-  updateLocation
+  updateLocation,
 );
 
 module.exports = router;

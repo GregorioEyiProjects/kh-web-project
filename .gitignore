@@ -22,3 +22,6 @@ jspm_packages/
 .npm/
 # Optional eslint cache
 .eslintcache
+
+# dump
+dump

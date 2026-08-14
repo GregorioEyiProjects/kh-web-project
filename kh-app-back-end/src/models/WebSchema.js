@@ -1,3 +1,5 @@
+// src/models/WebSchema.js
+
 const mongoose = require("mongoose");
 
 const webSchema = new mongoose.Schema(
@@ -38,7 +40,7 @@ const webSchema = new mongoose.Schema(
   },
   {
     timestamps: true,
-  }
+  },
 );
 
 const WebSchema = mongoose.model("WebSchema", webSchema);

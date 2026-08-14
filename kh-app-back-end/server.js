@@ -1,3 +1,5 @@
+// src/server.js
+
 const express = require("express");
 require("dotenv").config();
 const helmet = require("helmet");
@@ -33,7 +35,7 @@ app.use(
       }
     },
     credentials: true,
-  })
+  }),
 );
 app.use(helmet());
 app.use(morgan("dev"));

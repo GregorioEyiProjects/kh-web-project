@@ -1,7 +1,6 @@
 import NavBar from "../components/ui/NavBar";
 import getWebsiteDetails from "../lib/fetch";
 import useWebStore from "../store/webStore";
-
 import InfoAndBanner from "../components/ui/infoAndBanner";
 import MyWork from "../components/ui/MyWork";
 import Pricing from "../components/ui/pricePlan/Pricing";

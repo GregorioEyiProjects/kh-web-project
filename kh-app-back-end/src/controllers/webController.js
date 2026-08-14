@@ -1,3 +1,5 @@
+// src/controllers/webController.js
+
 const { validationResult } = require("express-validator");
 const WebSchema = require("../models/WebSchema");
 const multer = require("multer");
@@ -47,7 +49,7 @@ const updateHeaderAndSubHeader = async (req, res, next) => {
     const webData = await WebSchema.findOneAndUpdate(
       {},
       { headerText, subHeaderText },
-      { new: true, upsert: true } // upsert: true creates a new document if it doesn't exist
+      { new: true, upsert: true }, // upsert: true creates a new document if it doesn't exist
     );
 
     return res.status(200).json({
@@ -108,7 +110,7 @@ const uploadImage = async (req, res, next) => {
       const webData = await WebSchema.findOneAndUpdate(
         {},
         { $push: { images: imageUrl } }, // Push the new image URL into the images array
-        { new: true, upsert: true } // upsert: true creates a new document if it doesn't exist
+        { new: true, upsert: true }, // upsert: true creates a new document if it doesn't exist
       );
 
       if (!webData) {
@@ -128,7 +130,7 @@ const uploadImage = async (req, res, next) => {
       const webData = await WebSchema.findOneAndUpdate(
         { "location.locationName": locationName },
         { $set: { "location.$.locationImage": imageUrl } },
-        { new: true }
+        { new: true },
       );
 
       if (!webData) {
@@ -181,7 +183,7 @@ const updateLocation = async (req, res, next) => {
           "location.$.locationContact": locationContact,
         },
       },
-      { new: true }
+      { new: true },
     );
 
     if (!webData) {
