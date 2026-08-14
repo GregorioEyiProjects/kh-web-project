@@ -6,6 +6,8 @@ backend.tar
 frontend-app.tar
 frontend-dashboard.tar
 
+.DS_Store
+
 # Node.js dependencies
 node_modules/
 # Build output
@@ -22,6 +24,9 @@ jspm_packages/
 .npm/
 # Optional eslint cache
 .eslintcache
+<<<<<<< HEAD
 
 # dump
 dump
+=======
+>>>>>>> d7e40f3b89199d2921500939cdeac31eef350098

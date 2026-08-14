@@ -1,12 +1,16 @@
 # KH Fullstack App
 
-This is a monorepo for the **Lollipop Nails Shop** project, containing:
+This is an on going project for the **Lollipop Nails Shop** , containing:
 
 - **kh-app-front-end**: Public-facing website (React + Vite + Tailwind CSS)
 - **kh-app-dashboard**: Admin dashboard (React + Vite + Tailwind CSS)
 - **kh-app-back-end**: REST API backend (Node.js + Express + MongoDB + AWS S3)
 
 ---
+
+
+## Webiste
+![Home page](./screenshots/website2.jpeg)
 
 ## Project Structure
 
@@ -52,10 +56,6 @@ This will start all services (frontend, dashboard, backend, MongoDB):
 ```sh
 docker-compose up --build
 ```
-
-- Public website: [http://localhost:3000](http://localhost:3000)
-- Dashboard: [http://localhost:3001](http://localhost:3001)
-- Backend API: [http://localhost:5000/api/v1](http://localhost:5000/api/v1)
 
 ### 4. Running Locally (Development)
 
