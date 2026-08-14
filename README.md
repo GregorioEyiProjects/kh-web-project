@@ -11,6 +11,7 @@ This is an on going project for the **Lollipop Nails Shop** , containing:
 
 ## Webiste
 ![Home page](./screenshots/website2.jpeg)
+![Home page](./screenshots/dashboardHome.png)
 
 ## Project Structure
 
