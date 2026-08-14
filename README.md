@@ -18,6 +18,9 @@ This is an on going project for the **Lollipop Nails Shop** , containing:
 ![Home page](./screenshots/dashboardHome.png)
 ![Home page](./screenshots/dashboardTittleEdition.png)
 
+## Webiste with the hero tittle changed
+![Home page](./screenshots/mainPageEdited.png)
+
 
 ## Project Structure
 
